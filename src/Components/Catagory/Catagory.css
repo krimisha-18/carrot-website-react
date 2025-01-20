@@ -1,0 +1,90 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+
+}
+.cat-card {
+    width: 100%;
+    height: 520px;
+    overflow: hidden;
+    position: relative;
+
+}
+.cat-card .offer h3{
+    position: absolute;
+    top: 3%;
+    left: 5%;
+    color: #fff;
+    font-weight: 700;
+    line-height: 1.2;
+    display: inline-flex;
+    font-size: 48px;
+    z-index: 999;
+
+}
+.cat-card .card-img-top{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.catagory .nav-link{
+    font-size: 18px;
+    color: #000;
+    background-color: #f7f7f8;
+    border: 1px solid #ccccd1;
+
+}
+.catagory .nav-link span{
+    font-size: 14px;
+    color: #7a7a7a;
+
+}
+.catagory .nav-link:hover{
+    
+    color: #64b496;
+}
+.catagory .nav-link h6{
+    font-size: 15px;
+    color: #000;
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link{
+    background: #f7f7f8!important;
+    color: #64b496!important;
+}
+.ShopBtn .btn{
+    padding: 5px 20px;
+    background-color: #64b496;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+.ShopBtn .btn:hover{
+    background-color: #000;
+    border: 1px solid #fff;
+    
+}
+
+.cat-body{
+    position: absolute; 
+    left: 30%;
+    z-index: 999;
+}
+
+.cat-card::after{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    position: absolute;
+    top: -140px;
+    left: -90px;
+    z-index: 0;
+    transition: all 0.3s ease-in-out;
+}
+.cat-card:hover::after{
+   width: 600px;
+   height: 800px;
+}
